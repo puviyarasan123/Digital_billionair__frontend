@@ -1,12 +1,11 @@
 import React from "react";
-import img1 from "../assets/Dashboard.png";
+import img1 from "../assets/dashboard.png";
 
-
-export default function RecentJobPosts() {
+export default function Main_content() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-120">
       {/* Heading */}
-      <div className="max-w-full">
+      <div className="w-full text-center">
         <h2 className="text-2xl font-bold text-gray-900">Recent Job Posts</h2>
         <p className="text-gray-500 mt-1">
           Quick view of your latest openings.

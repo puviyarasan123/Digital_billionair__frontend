@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import img1 from "../assets/mainimg.png";
 import img2 from "../assets/dbimg.png";
 import { Eye, EyeOff } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -64,15 +66,16 @@ export default function Login() {
             </a>
           </div>
 
-          <button
-            type="submit"
-            className="w-full py-2 px-4 rounded-lg font-semibold text-white 
-                      bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
-                      hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 
-                      transition-all duration-300"
-          >
-            Submit
-          </button>
+    <Link
+  to="/Dashboard"
+  className="w-full block py-2 px-4 rounded-lg font-semibold text-white 
+             bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
+             hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 
+             transition-all duration-300 text-center"
+>
+  Submit
+</Link>
+
         </form>
 
         <p className="text-sm text-gray-600 mt-6">
