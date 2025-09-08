@@ -34,7 +34,7 @@ export default function Header() {
         <div className="relative">
           <button
             onClick={() => setOpen(!open)}
-            className="flex items-center gap-2 text-purple-600 font-medium"
+            className="flex items-center gap-1 text-purple-600 font-medium bg-white"
           >
             <User size={18} className="text-purple-600" />
             <span>Pegasus Nexus</span>

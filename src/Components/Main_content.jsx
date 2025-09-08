@@ -3,9 +3,9 @@ import img1 from "../assets/dashboard.png";
 
 export default function Main_content() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-120">
+    <div className="flex flex-col w-screen h-screen bg-white py-30 text-center">
       {/* Heading */}
-      <div className="w-full text-center">
+      <div className="w-full text-left px-30">
         <h2 className="text-2xl font-bold text-gray-900">Recent Job Posts</h2>
         <p className="text-gray-500 mt-1">
           Quick view of your latest openings.
@@ -31,7 +31,7 @@ export default function Main_content() {
 
       {/* CTA Button */}
       <div className="mt-6">
-        <button className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-md shadow-sm transition">
+        <button className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-md shadow-sm transition center">
           Post New Job
         </button>
       </div>
