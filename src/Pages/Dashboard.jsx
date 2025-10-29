@@ -19,7 +19,6 @@ export default function Dashboard() {
       alert("Please select a file first!");
       return;
     }
-<<<<<<< HEAD
 
     setLoading(true);
     const formData = new FormData();
@@ -101,31 +100,6 @@ export default function Dashboard() {
             <LogOut size={18} />
             Logout
           </Link>
-=======
-    console.log("Uploading file:", file.name);
-    // TODO: send file to backend API (Flask/Node)
-  };
-
-  const handleDownload = () => {
-    console.log("Downloading result...");
-    // TODO: trigger result download from backend
-  };
-
-  return (
-    <div className="min-h-screen flex flex-col bg-gray-50  w-screen h-[60%]">
-      {/* Header */}
-      <header className="flex flex-col md:flex-row justify-between items-center bg-blue-700 text-white px-10 py-4 shadow-md w-[100%] h-full ">
-        <h1 className="text-2xl font-bold">📊 Business Forecast Dashboard</h1>
-        <div className="flex items-center gap-6">
-          <UserCircle size={28} className="cursor-pointer hover:text-gray-200" />
-         <Link
-  to="/login"
-  className="flex items-center gap-2 bg-red-500 hover:bg-red-600 px-4 py-2 rounded-xl shadow-md"
->
-  <LogOut size={18} />
-  Logout
-</Link>
->>>>>>> def3e78f27afcbb35fd551dd8aba37271f03c71d
         </div>
       </header>
 
